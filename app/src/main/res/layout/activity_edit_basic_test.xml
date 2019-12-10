@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterProfileActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="기본정보 변경"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/UserImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="23dp"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:srcCompat="@drawable/profile" />
+
+
+            <Button
+                android:id="@+id/selectImage"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="프로필 사진 변경"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/UserImage" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="32dp"
+                android:text="닉네임"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/selectImage" />
+
+            <EditText
+                android:id="@+id/et_nickname"
+                android:layout_width="350dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="닉네임을 입력해주세요."
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                android:background="@drawable/edittext_conner"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="전화번호"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/et_nickname"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_nickname"
+                app:layout_constraintTop_toBottomOf="@+id/et_nickname" />
+
+            <EditText
+                android:id="@+id/et_phoneNum"
+                android:layout_width="350dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="핸드폰 번호를 입력해주세요."
+                android:inputType="phone"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/textView12"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="직업"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/et_phoneNum"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_phoneNum"
+                app:layout_constraintTop_toBottomOf="@+id/et_phoneNum" />
+
+            <Spinner
+                android:id="@+id/sp_job"
+                android:layout_width="150dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/직업"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@+id/textView13"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/tv_univ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="대학교"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/sp_job"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/sp_job"
+                app:layout_constraintTop_toBottomOf="@+id/sp_job" />
+
+            <EditText
+                android:id="@+id/et_univ"
+                android:layout_width="350dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="학교를 선택해주세요."
+                android:inputType="textPersonName"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/tv_univ"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_univ"
+                app:layout_constraintTop_toBottomOf="@+id/tv_univ"
+                android:background="@drawable/edittext_conner"/>
+
+            <TextView
+                android:id="@+id/tv_etc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="32dp"
+                android:text="기타"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toEndOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/et_phoneNum" />
+
+            <EditText
+                android:id="@+id/et_etc"
+                android:layout_width="190dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="기타 입력해주세요."
+                android:inputType="textPersonName"
+                android:visibility="invisible"
+                app:layout_constraintStart_toEndOf="@+id/sp_job"
+                app:layout_constraintTop_toBottomOf="@+id/tv_etc"
+                android:background="@drawable/edittext_conner"/>
+
+            <Button
+                android:id="@+id/btn_registerPf1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/button"
+                android:paddingVertical="15dp"
+                android:text="수정"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_univ" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

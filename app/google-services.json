@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1007326170513",
+    "firebase_url": "https://amuna-b80f6.firebaseio.com",
+    "project_id": "amuna-b80f6",
+    "storage_bucket": "amuna-b80f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007326170513:android:07098d10f4e64b38b2de30",
+        "android_client_info": {
+          "package_name": "com.example.amuna"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007326170513-vupvskvot34bp4tb61u464drsi4kfosg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVeCC2S9tEGWSifXlaKJpbTAS82IRi2T0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007326170513-vupvskvot34bp4tb61u464drsi4kfosg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

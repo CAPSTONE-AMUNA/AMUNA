@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/activity_management"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="679dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="257dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:text="채팅"
+            android:textSize="30sp"
+            android:textColor="#ED4C00"
+            android:layout_marginLeft="20dp"/>
+
+        <ListView
+            android:id="@+id/listview2"
+            android:layout_width="match_parent"
+            android:layout_height="658dp"
+            android:layout_marginTop="10dp"
+            android:divider="#FAFAFA"
+            android:dividerHeight="10dp">
+
+        </ListView>
+    </LinearLayout>
+</RelativeLayout>

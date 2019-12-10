@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Uprofile"
+    android:layout_weight="1">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/UserImage"
+            android:layout_width="184dp"
+            android:layout_height="188dp"
+            android:layout_marginTop="101dp"
+            android:layout_marginBottom="25dp"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/Nickname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/Nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="171dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="170dp"
+            android:text="닉네임"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/UserImage" />
+
+        <TextView
+            android:id="@+id/Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginBottom="15dp"
+            android:text="Basic info"
+            android:textSize="23dp"
+            app:layout_constraintBottom_toTopOf="@+id/UserJob"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/UserJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="직업"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/UserAge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Info" />
+
+        <TextView
+            android:id="@+id/UserAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="160dp"
+            android:text="나이"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/Age"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/UserJob" />
+
+        <TextView
+            android:id="@+id/UserArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="160dp"
+            android:text="지역"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/Area"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/UserAge" />
+
+        <TextView
+            android:id="@+id/UserBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginBottom="12dp"
+            android:text="예산"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/UserNationality"
+            app:layout_constraintEnd_toStartOf="@+id/Budget"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/UserNationality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginBottom="15dp"
+            android:text="국적"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@id/view2"
+            app:layout_constraintEnd_toStartOf="@+id/Nationality"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="392dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="9dp"
+
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:background="#747474"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Nationality" />
+
+
+        <Button
+            android:id="@+id/Favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="300dp"
+            android:background="@drawable/button"
+            android:text="찜하기"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Message"
+            android:layout_width="210dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="114dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/mbutton"
+            android:text="메세지보내기"
+            android:textSize="20dp"
+            android:paddingStart="15sp"
+            android:drawableLeft="@drawable/mes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/intro"
+            app:layout_constraintVertical_bias="1.0"
+            />
+
+        <TextView
+            android:id="@+id/Job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="10dp"
+            android:text="직업"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/Age"
+            app:layout_constraintStart_toEndOf="@+id/UserJob"
+            app:layout_constraintTop_toBottomOf="@+id/Nickname" />
+
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="38dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="나이"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/Area"
+            app:layout_constraintStart_toEndOf="@+id/UserAge"
+            app:layout_constraintTop_toBottomOf="@+id/Job" />
+
+        <TextView
+            android:id="@+id/Area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="지역"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/Budget"
+            app:layout_constraintStart_toEndOf="@+id/UserArea"
+            app:layout_constraintTop_toBottomOf="@+id/Age" />
+
+        <TextView
+            android:id="@+id/Budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="10dp"
+            android:text="예산"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/Nationality"
+            app:layout_constraintStart_toEndOf="@+id/UserBudget"
+            app:layout_constraintTop_toBottomOf="@+id/Area" />
+
+
+        <TextView
+            android:id="@+id/Plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="23dp"
+            android:text="특이사항"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="23dp"
+            android:text="기재"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/Plus"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/Nationality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="국적"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintStart_toEndOf="@+id/UserNationality"
+            app:layout_constraintTop_toBottomOf="@+id/Budget" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

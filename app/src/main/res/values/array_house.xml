@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="주거">
+        <item>주거유형</item>
+        <item>기숙사</item>
+        <item>자취</item>
+        <item>쉐어하우스</item>
+    </string-array>
+</resources>
